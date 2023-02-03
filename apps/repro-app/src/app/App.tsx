@@ -12,12 +12,15 @@ import {
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
+import { ReproComponent } from '@repro/ui';
+
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
 
   return (
     <>
+      <ReproComponent />
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
