@@ -16,6 +16,13 @@
         "command": "nx start repro-app"
       }
     },
+    "run-web": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/repro-app",
+        "command": "npx expo-cli start --web"
+      }
+    },
     "run-ios": {
       "executor": "@nrwl/expo:run",
       "options": {
