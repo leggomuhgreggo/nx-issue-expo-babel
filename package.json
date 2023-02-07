@@ -76,7 +76,6 @@
     "url-loader": "^3.0.0"
   },
   "resolutions": {
-    "webpack": "^4.43.0",
     "babel-loader": "^8.2.2"
   }
 }

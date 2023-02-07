@@ -20,7 +20,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/repro-app",
-        "command": "npx expo start --web"
+        "command": "npx expo-cli start --web"
       }
     },
     "run-ios": {
