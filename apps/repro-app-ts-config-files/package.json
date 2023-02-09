@@ -1,0 +1,11 @@
+{
+  "name": "repro-app-ts-config-files",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react-native": "*"
+  },
+  "scripts": {
+    "postinstall": "rm -r node_modules && cd ../../ && yarn install && npx nx sync-deps repro-app-ts-config-files && npx nx ensure-symlink repro-app-ts-config-files"
+  }
+}
