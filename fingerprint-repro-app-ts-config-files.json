@@ -33,20 +33,14 @@
       "hash": "383b009a9947519c85016f559448b62d116c4a59"
     },
     {
-      "type": "file",
-      "filePath": "app.config.ts",
+      "type": "dir",
+      "filePath": "",
       "reasons": [
-        "expoConfig"
-      ],
-      "hash": "69eba8f530c531c5900410c50258f8d6db7a7189"
-    },
-    {
-      "type": "file",
-      "filePath": "eas.json",
-      "reasons": [
+        "expoConfigPlugins",
+        "expoConfig",
         "easBuild"
       ],
-      "hash": "b1234235d1761f78d3ecf5d0313db784457d2696"
+      "hash": "aa73bccfaa8e8197c0020f64932dbeef409dc220"
     },
     {
       "type": "contents",
@@ -67,5 +61,5 @@
       "hash": "147021e74859fc8e63961e6e370d0d34fcc3ffd7"
     }
   ],
-  "hash": "94f992ee9411a46cb7872ba496832a3036f2a86e"
+  "hash": "3d5535ae84e6b7c4b5a6b3e77041f5e693cd9eb7"
 }
