@@ -1,0 +1,63 @@
+{
+  "sources": [
+    {
+      "type": "file",
+      "filePath": "./assets/adaptive-icon.png",
+      "reasons": [
+        "expoConfigExternalFile"
+      ],
+      "hash": "19b53640a95efdc2ccc7fc20f3ea4d0d381bb5c4"
+    },
+    {
+      "type": "file",
+      "filePath": "./assets/icon.png",
+      "reasons": [
+        "expoConfigExternalFile"
+      ],
+      "hash": "3f71f5a8458c06b83424cc33e1f2481f601199ea"
+    },
+    {
+      "type": "file",
+      "filePath": "./assets/splash.png",
+      "reasons": [
+        "expoConfigExternalFile"
+      ],
+      "hash": "206a875d5dc6f23eb9515bebd899ebb9f56eca82"
+    },
+    {
+      "type": "file",
+      "filePath": "app.json",
+      "reasons": [
+        "expoConfig"
+      ],
+      "hash": "2be88d001799a6be5744f8b4296ca7a3dcf3c6a9"
+    },
+    {
+      "type": "file",
+      "filePath": "eas.json",
+      "reasons": [
+        "easBuild"
+      ],
+      "hash": "b1234235d1761f78d3ecf5d0313db784457d2696"
+    },
+    {
+      "type": "contents",
+      "id": "expoAutolinkingConfig:android",
+      "contents": "{\"modules\":[]}",
+      "reasons": [
+        "expoAutolinkingAndroid"
+      ],
+      "hash": "147021e74859fc8e63961e6e370d0d34fcc3ffd7"
+    },
+    {
+      "type": "contents",
+      "id": "expoAutolinkingConfig:ios",
+      "contents": "{\"modules\":[]}",
+      "reasons": [
+        "expoAutolinkingIos"
+      ],
+      "hash": "147021e74859fc8e63961e6e370d0d34fcc3ffd7"
+    }
+  ],
+  "hash": "f939a3df19c44958dcb91ef1a62b99cd939c236d"
+}
