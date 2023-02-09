@@ -1450,6 +1450,19 @@
     terminal-link "2.1.1"
     tslib "2.4.1"
 
+"@expo/fingerprint@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@expo/fingerprint/-/fingerprint-0.0.2.tgz#cc2c93bd41d3ade707f9348cd7d5e8bb4b7c94a5"
+  integrity sha512-dU1FhtIj0dPNEFtAgcl+FNVSiUFTByYXr9KeuCmvtpu+4etH29vUBVTh4ceO5PmRbCQnHjVTDhKsZ6Wj1R4PLw==
+  dependencies:
+    "@expo/spawn-async" "^1.5.0"
+    chalk "^4.1.2"
+    debug "^4.3.4"
+    find-up "^5.0.0"
+    minimatch "^3.0.4"
+    p-limit "^3.1.0"
+    resolve-from "^5.0.0"
+
 "@expo/image-utils@0.3.21":
   version "0.3.21"
   resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.3.21.tgz#dabe772135a66671939f87389e11f23e54341e1e"
