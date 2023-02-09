@@ -1,0 +1,11 @@
+{
+  "name": "repro-app-local-config-plugins",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react-native": "*"
+  },
+  "scripts": {
+    "postinstall": "rm -r node_modules && cd ../../ && yarn install && npx nx sync-deps repro-app-local-config-plugins && npx nx ensure-symlink repro-app-local-config-plugins"
+  }
+}
