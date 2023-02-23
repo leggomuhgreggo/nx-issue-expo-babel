@@ -1,4 +1,4 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env ./node_modules/.bin/ts-node
 
 /**
  * This is a (temporary) way to incorporate the new, node-based solution, into existing shell scripts.
