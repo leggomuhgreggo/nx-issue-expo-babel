@@ -1,0 +1,40 @@
+{
+  "name": "workspace-utils-expo-fingerprint",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/workspace-utils/expo-fingerprint/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/workspace-utils/expo-fingerprint",
+        "main": "libs/workspace-utils/expo-fingerprint/src/index.ts",
+        "tsConfig": "libs/workspace-utils/expo-fingerprint/tsconfig.lib.json",
+        "assets": ["libs/workspace-utils/expo-fingerprint/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/workspace-utils/expo-fingerprint/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/workspace-utils/expo-fingerprint/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

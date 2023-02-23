@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@repro/ui": ["libs/repro-ui/src/index.ts"]
+      "@repro/ui": ["libs/repro-ui/src/index.ts"],
+      "@workspace/expo-fingerprint": [
+        "libs/workspace-utils/expo-fingerprint/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
