@@ -72,3 +72,56 @@ npx @expo/fingerprint . > fingerprint-workspace.json
 ```
 
 [`fingerprint-workspace.json`](https://github.com/leggomuhgreggo/nx-issue-expo-babel/blob/expo-fingerprint-repro/fingerprint-workspace.json)
+
+## Workaround Example
+
+I added a small lib `@workspace/expo-fingerprint` with a custom implementation on top of `@expo/fingerprint`, that adapts it to work better with Nx monorepo idiosyncrasies.
+
+It works by fingerprinting both the project AND the workspace, selecting only the sources we're interested in -- then combines them into a single fingerprint -- and finally re-hashes to complete the adapted fingerprint object.
+
+It exports two helper methods:
+
+- `createCustomFingerprintAsync` - returns the whole fingerprint object
+- `createCustomProjectHashAsync` - returns just the fingerprint hash
+
+### Usage
+
+I added a ts-node shell script to make it easy to use outside of a project.
+
+#### Basic usage
+
+```
+./fingerprint-adapter-script.ts
+```
+
+#### With Time
+
+```
+time ./fingerprint-adapter-script.ts
+```
+
+<details><summary>time output</summary>
+
+```
+6.48s user 1.23s system 169% cpu 4.550 total
+```
+
+NOTE: I clocked this from the monorepo at work and it's a bit chonkier
+
+```
+27.95s user 6.64s system 153% cpu 22.540 total
+```
+
+</details>
+
+#### With Debug
+
+```
+DEBUG='expo:*' ./fingerprint-adapter-script.ts
+```
+
+<details><summary>debug output</summary>
+
+![image](./debug-screenshot.png)
+
+</details>
