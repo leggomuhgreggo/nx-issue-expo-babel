@@ -56,12 +56,12 @@ const EXTRA_SOURCES: SourceWithPath[] = [
   },
   {
     type: 'file',
-    filePath: 'apps/repro-app-ts-config-files/config-plugins/eas.json',
+    filePath: 'apps/repro-app-ts-config-files/eas.json',
     reasons: ['expoConfig'],
   },
   {
     type: 'file',
-    filePath: 'apps/repro-app-ts-config-files/config-plugins/app.config.ts',
+    filePath: 'apps/repro-app-ts-config-files/app.config.ts',
     reasons: ['expoConfig'],
   },
 ];
