@@ -6,7 +6,7 @@ import type {
 } from '@expo/fingerprint';
 
 /* ***********************************
- * getRootLevelFingerprintAsync
+ * getRootLevelFingerprintSourcesAsync
  * ***********************************
 
  * This is used in conjunction with a project level fingerprint, where both are
@@ -14,7 +14,7 @@ import type {
  * fingerprint
  */
 
-export async function getRootLevelFingerprintAsync() {
+export async function getRootLevelFingerprintSourcesAsync() {
   const rootFingerPrint = await createFingerprintAsync('.', {
     extraSources: [...EXTRA_SOURCES],
   });

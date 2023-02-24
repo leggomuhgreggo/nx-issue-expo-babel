@@ -8,7 +8,9 @@ import { createFingerprintAsync } from '@expo/fingerprint';
  * filtered and merged together, then rehashed to generate the correct
  * fingerprint
  */
-export async function getProjectLevelFingerprintAsync(projectRoot: string) {
+export async function getProjectLevelFingerprintSourcesAsync(
+  projectRoot: string
+) {
   const projectFingerPrint = await createFingerprintAsync(projectRoot);
   const filteredSources = projectFingerPrint.sources.filter(
     (source) => source.type === 'file'

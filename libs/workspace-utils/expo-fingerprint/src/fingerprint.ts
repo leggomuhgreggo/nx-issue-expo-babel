@@ -1,7 +1,7 @@
 import { hashAllSources } from './hashAllSources';
 import {
-  getRootLevelFingerprintAsync,
-  getProjectLevelFingerprintAsync,
+  getRootLevelFingerprintSourcesAsync,
+  getProjectLevelFingerprintSourcesAsync,
 } from './adapters';
 
 /**
@@ -18,9 +18,9 @@ import {
  * Returns entire fingerprint object
  */
 export async function createCustomFingerprintAsync(projectRoot?: string) {
-  const rootLevelFingerprint = await getRootLevelFingerprintAsync();
-  const projectLevelFingerprint = await getProjectLevelFingerprintAsync(
-    './apps/order',
+  const rootLevelFingerprint = await getRootLevelFingerprintSourcesAsync();
+  const projectLevelFingerprint = await getProjectLevelFingerprintSourcesAsync(
+    './apps/order'
   );
 
   const mergedSources = [...rootLevelFingerprint, ...projectLevelFingerprint];

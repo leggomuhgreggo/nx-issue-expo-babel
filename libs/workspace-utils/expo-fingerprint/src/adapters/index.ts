@@ -1,2 +1,2 @@
-export { getProjectLevelFingerprintAsync } from './getProjectLevelFingerprintAsync';
-export { getRootLevelFingerprintAsync } from './getRootLevelFingerprintAsync';
+export { getProjectLevelFingerprintSourcesAsync } from './getProjectLevelFingerprintSourcesAsync';
+export { getRootLevelFingerprintSourcesAsync } from './getRootLevelFingerprintSourcesAsync';
